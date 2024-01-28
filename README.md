@@ -1,66 +1,25 @@
-## Foundry
+# Basic Token Factory Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
 
-Foundry consists of:
+The Decentralized Basic Token Factory Smart Contract offers a decentralized approach to generate advanced tokens endowed with customizable attributes. Comprising two core contracts, namely Token Factory and Token, this framework empowers users with the versatility to opt for either fundamental or sophisticated token setups, facilitating personalized token deployments
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Contracts
 
-## Documentation
+### 1. Token Factory
 
-https://book.getfoundry.sh/
+The Token Factory contract acts as the central hub for creating the tokens. Users can interact with the Token Factory to deploy new tokens.
 
-## Usage
+#### Functions:
 
-### Build
+- `createToken`: Function to create new token
+- `getTokenData`: Function to view token data
 
-```shell
-$ forge build
-```
+### 2. Token
 
-### Test
+The Token contract represents the individual tokens created by the Token Factory.
 
-```shell
-$ forge test
-```
+## Contract Address
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- Token contract = 0x4cC1bFAd6eeDe1B715ea897A72D10A643940F0fe
+- Token factory contract = 0x4B975519D382a004b26468A81Bc8cCec71eb6Ba9
